@@ -1,0 +1,25 @@
+﻿@page
+@model TicTacToe.Pages.TicTacToe2Model
+@{
+    ViewData["Title"] = "TicTacToe2";
+}
+
+<h2>TicTacToe2</h2>
+
+@for(int x = 0; x < Model.Board.GetLength(0); x++)
+{
+    <div class="row">
+        @for (int y = 0; y < Model.Board.GetLength(1); y++)
+        {
+            @if (Model.Board[x, y] == 0)
+            {
+                <a href="" class="square-2"></a>
+            }
+            else
+            {
+                <div class="square-2">@Model.Board[x, y]</div>
+            }
+        }
+    </div>
+}
+

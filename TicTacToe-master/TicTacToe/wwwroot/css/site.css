@@ -1,0 +1,63 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.square {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    color:purple;
+    text-align:center;
+}
+
+.square:hover {
+    background-color: red;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.square-2 {
+    width: 100px;
+    height: 100px;
+    font-size: 90px;
+    color: purple;
+    text-align: center;
+}
+
+.square-2:nth-child(2n) {
+    border-left: solid 1px black;
+    border-right: solid 1px black;
+}
+
+.row {
+    display: flex;
+}
+
+.row:nth-child(3) {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+}
+
+svg > path {
+    stroke: black;
+    fill: white;
+}
+
+svg > path:hover {
+    fill: goldenrod;
+}
